@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LaunchForte</title>
+  <!-- Google Fonts (Poppins for headings, Open Sans for body) -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@700&display=swap" rel="stylesheet" />
+  <!-- External CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header / Navigation (fixed at top) -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <!-- White logo on transparent background for dark header -->
+        <a href="#hero"><img src="images/white_logo_transparent_background.png" alt="LaunchForte Logo"></a>
+      </div>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <!-- Hamburger icon for mobile menu -->
+      <div class="hamburger">&#9776;</div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Launching Your Online Success</h1>
+      <p>Software Engineering, Web Development &amp; SEO Solutions</p>
+      <a href="#contact" class="cta-btn">Get Started</a>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>LaunchForte is a technology consulting firm dedicated to helping businesses establish a strong online presence. We deliver high-quality software engineering, modern web development, and effective SEO strategies to empower our clients. Our mission is to combine cutting-edge development with proven marketing techniques to launch clients to new levels of digital success.</p>
+      <!-- Founder headshot (optional) -->
+      <div class="founder">
+        <img src="images/headshot.JPG" alt="Founder Headshot">
+        <p><strong>Seth Forte</strong><br>Founder &amp; Lead Engineer</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="services-list">
+        <div class="service-item">
+          <h3>Software Engineering</h3>
+          <p>Custom software solutions tailored to your business needs, ensuring scalability and performance.</p>
+        </div>
+        <div class="service-item">
+          <h3>Web Development</h3>
+          <p>Modern, responsive website design and development to engage users and convert leads.</p>
+        </div>
+        <div class="service-item">
+          <h3>SEO Optimization</h3>
+          <p>Data-driven SEO and digital marketing strategies to improve your search rankings and visibility.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <div class="container">
+      <h2>Portfolio</h2>
+      <p>Our project portfolio is coming soon. We’re working on some exciting projects to showcase here in the future.</p>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials">
+    <div class="container">
+      <h2>Testimonials</h2>
+      <blockquote>"LaunchForte was instrumental in boosting our online presence and driving more traffic to our site."</blockquote>
+      <p class="client-name">&mdash; Luke Walton, CEO of Acme Corp</p>
+    </div>
+  </section>
+
+  <!-- Contact/Booking Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Interested in working with us? Send a message and we'll get back to you shortly.</p>
+      <!-- Contact Form (Netlify Forms enabled) -->
+      <form name="contact" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact">
+        <!-- Honeypot field for spam bots (hidden) -->
+        <p class="hidden"><label>Don't fill this out: <input name="bot-field"></label></p>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- External JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
